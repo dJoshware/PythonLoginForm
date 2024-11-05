@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&family=Julius+Sans+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(#FF6464, #FFF5A5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    padding: 50px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+#heading {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.mb-4 {
+    position: relative;
+}
+
+.mb-4 .bi {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0, 0.70);
+    top: 47%;
+    right: 1%;
+    z-index: 2;
+}
+
+.mb-4 .bi:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+#passwordError2 {
+    color: #D21312;
+}
+
+#title {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+}
+
+/* #FF6464 */
+/* #FF8264 */
+/* #FFAA64 */
+/* #FFF5A5 */
