@@ -11,12 +11,12 @@ A simple login form built with Python, utilizing the Flask framework to perform 
 Below are video demonstrations showing how to use the app.
 
 #### Demo 1: [Brief Description of Video]
-![Demo 1](https://link-to-your-video.com)
+📹[Demo 1](https://link-to-your-video.com)
 
 #### Demo 2: [Brief Description of Video]
-![Demo 2](https://link-to-your-second-video.com)
+📹[Demo 2](https://link-to-your-second-video.com)
 
 ---
 
 ## License
-![MIT License](https://github.com/juicername6424/PythonLoginForm/blob/main/LICENSE)
+📝[MIT License](https://github.com/juicername6424/PythonLoginForm/blob/main/LICENSE)
