@@ -98,4 +98,4 @@ def delete_database():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
