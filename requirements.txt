@@ -6,3 +6,4 @@ Flask-WTF
 python-dotenv
 SQLAlchemy
 WTForms
+email_validator

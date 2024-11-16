@@ -31,7 +31,7 @@ class LoginForm(FlaskForm):
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
 app.app_context().push()
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///users.db"
 db = SQLAlchemy(app)
 bootstrap = Bootstrap5(app)
 
