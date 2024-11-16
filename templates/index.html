@@ -18,7 +18,7 @@
 
 <body>
     {% if user_exists: %}
-        <h1 id="title">Hello</h1>
+        <h1 id="title"><a href="{{ url_for('login') }}" style="text-decoration: none; color: inherit;">Hello</a></h1>
     {% else: %}
         {% block content %}{% endblock %}
     {% endif %}
