@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
@@ -33,7 +33,7 @@ app.secret_key = os.getenv("SECRET_KEY")
 app.app_context().push()
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
 db = SQLAlchemy(app)
-Bootstrap(app)
+bootstrap = Bootstrap5(app)
 
 
 class User(db.Model):
@@ -66,7 +66,9 @@ def login():
             query, {"email": email, "password": password})
         exists = result.scalar()
         if exists:
-            return redirect(url_for('home'))
+            user_exists = True
+            # return redirect(url_for('home'))
+            return render_template("index.html", user_exists=user_exists)
         else:
             boolean = False
             return render_template("login.html", form=login_form, boolean=boolean)
