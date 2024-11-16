@@ -19,6 +19,16 @@
             <div class="mb-4">
                 {{ form.email.label(style="font-weight:500") }}
                 {{ form.email(class="form-control", placeholder="example@example.com") }}
+                <div class="form-text" {% if boolean == False %}style="display: block;"{% else %}style="display: none;"{% endif %}>
+                    Email already exists.
+                </div>
+                {% if form.email.errors %}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             <div class="mb-4">
                 {{ form.password.label(style="font-weight:500") }}
