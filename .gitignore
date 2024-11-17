@@ -165,3 +165,7 @@ cython_debug/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+*.zip
+
+# EC2 Key Pair files
+*.pem
