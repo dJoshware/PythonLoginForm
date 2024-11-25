@@ -16,4 +16,4 @@ A simple login form built with Python, utilizing the Flask framework to perform 
 ---
 
 ## License
-📝 [MIT License](https://github.com/juicername6424/PythonLoginForm/blob/main/LICENSE)
+📝 [MIT License](https://github.com/djoshware/PythonLoginForm/blob/main/LICENSE)
